@@ -1,4 +1,4 @@
-//Primitive datatypes
+// Primitive datatypes
 
 let day = 5;
 console.log(typeof(day));
