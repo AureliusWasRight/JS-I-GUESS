@@ -1,5 +1,7 @@
-let inbox1 = 100;
-let inbox2 = 256;
+const inbox = 100;
+let user = " Boi";
 
-let all_emails = inbox1 + inbox2;
+
+
+console.log(inbox + user);
 
