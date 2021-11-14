@@ -35,3 +35,20 @@ if (age >= 18) {
 } else {
     console.log("Godobye");
 }
+
+if (0) {
+    console.log("Truthy");
+} else {
+    console.log("Falsy");
+}
+
+// FALSE, 0, "", null, undefined, NaN -- will return false
+//           ^^ empty string
+
+const test = 0;
+
+if (test) {
+    console.log("Truthy v. 2");
+} else {
+    console.log("Falsy v. 2");
+}
