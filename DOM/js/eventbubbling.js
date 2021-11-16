@@ -30,6 +30,8 @@ function deleteItem(event) {
     event.target.remove(); // ! removes the element
 }
 
-todoList.addEventListener("click", function () {
-    todoList.classList.toggle("fade");
-});
+todoList.addEventListener("click", () => chooseClass("fade"));
+
+function chooseClass(a) {
+    todoList.classList.toggle(a);
+}
