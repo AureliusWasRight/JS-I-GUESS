@@ -45,7 +45,11 @@ function deleteCheck(event) {
 
     if (item.classList[0] === "remove-btn") {
         const todo = item.parentElement;
-        todo.remove();
+        // ? Add animation here
+        todo.classList.add("fall");
+        todo.addEventListener("transitionend", function () {
+            todo.remove();
+        });
     }
     if (item.classList[0] === "checkmark-btn") {
         const todo = item.parentElement;
