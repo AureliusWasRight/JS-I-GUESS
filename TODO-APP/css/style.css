@@ -42,3 +42,45 @@ form button:hover {
     background: #fda085;
     color: white;
 }
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    display: flex;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.remove-btn,
+.checkmark-btn {
+    background: #bb3c18;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.checkmark-btn {
+    background: rgb(66, 155, 66);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
