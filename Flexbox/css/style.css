@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    display: flex;
+    height: 100vh;
+    border: 20px solid rgb(0, 0, 0);
+}
+
+.child1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: rgb(145, 21, 107);
+}
+.child2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background: rgb(65, 85, 151);
+}
+
+.child3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 200px;
+    background: rgb(110, 141, 53);
+}
+
+.child4,
+.child8 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    background: rgb(173, 118, 16);
+}
+
+.child5 {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    background: rgb(103, 158, 137);
+}
+
+.child6 {
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    background: rgb(173, 118, 16);
+}
+
+.child7 {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+    height: 200px;
+    background: rgb(103, 158, 137);
+}
