@@ -1,5 +1,3 @@
-//? Map
-
 const videos = [
     "Software Engineering",
     "Stuff made stuff",
@@ -17,9 +15,26 @@ const vidya = [
     { title: "GodOfChina", rating: 11 },
 ];
 
+//? Map
+// * turnary operator
+
 const newVideos = videos.map(function (video) {
     return video.toUpperCase();
 });
+
+// const newIf = videos.map(function (video) {
+//     if (video.length < 10) {
+//         return video;
+//     } else {
+//         return "bing";
+//     }
+// });
+
+const newTurnary = videos.map(function (video) {
+    return video.length < 10 ? video : "nope";
+});
+
+console.log(newTurnary);
 
 //? Find
 
@@ -49,10 +64,10 @@ const checkRating = vidya.every(function (game) {
     return game.rating > 8;
 });
 
-console.log(checkRating);
+// console.log(checkRating);
 
 const checkAgane = vidya.some(function (game) {
     return game.rating > 8;
 });
 
-console.log(checkAgane);
+// console.log(checkAgane);
