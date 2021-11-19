@@ -34,7 +34,7 @@ const newTurnary = videos.map(function (video) {
     return video.length < 10 ? video : "nope";
 });
 
-console.log(newTurnary);
+// console.log(newTurnary);
 
 //? Find
 
@@ -66,8 +66,34 @@ const checkRating = vidya.every(function (game) {
 
 // console.log(checkRating);
 
-const checkAgane = vidya.some(function (game) {
-    return game.rating > 8;
+const checkAgane = vidya.some((game) => (game.rating > 8 ? game : "no"));
+
+console.log(checkAgane);
+
+// ? arrow functions
+
+// const sayHello = function () {
+//     console.log("Hello");
+// };
+
+// sayHello();
+
+const arrowVideos = videos.map((video) => {
+    return video.length < 10 ? video : "arrow";
 });
 
-// console.log(checkAgane);
+const anotherArrow = videos.map((video) => {
+    return video.length < 10 ? video : "arrow";
+});
+
+const anotherArrowVideos = videos.map((video) =>
+    video.length < 10 ? video : "yaes"
+);
+
+// console.log(arrowVideos);
+// console.log(anotherArrowVideos);
+
+const arrowMap = videos.map((video) => video + " yo");
+const upperArrow = videos.map((video) => video.toUpperCase());
+console.log(arrowMap);
+console.log(upperArrow);
