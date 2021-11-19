@@ -1,4 +1,4 @@
-! Higher order functions are ones which take other functions in
+// ! Higher order functions are ones which take other functions in
 // ! Higher order example
 function repeater(fn) {
     fn();
