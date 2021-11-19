@@ -27,7 +27,7 @@ const searchTutorial = videos.find(function (video) {
     return video.includes("FLEXBOX");
 });
 
-console.log(searchTutorial);
+// console.log(searchTutorial);
 
 //? filter
 
@@ -39,5 +39,20 @@ const highRating = vidya.filter(function (game) {
     return game.rating > 9;
 });
 
-console.log(highRating);
-console.log(shortSearch);
+// console.log(highRating);
+// console.log(shortSearch);
+
+// ? some and every
+// As long as 1 element true - some
+// All elements must be equal to value - every
+const checkRating = vidya.every(function (game) {
+    return game.rating > 8;
+});
+
+console.log(checkRating);
+
+const checkAgane = vidya.some(function (game) {
+    return game.rating > 8;
+});
+
+console.log(checkAgane);
