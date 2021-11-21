@@ -84,10 +84,10 @@ svg {
     background-color: rgb(0, 240, 240);
 }
 .hihat-pad.active {
-    background-color: rgb(100, 15, 236);
+    background-color: rgb(25, 235, 35);
 }
 .snare-pad.active {
-    background-color: rgb(25, 235, 35);
+    background-color: rgb(100, 15, 236);
 }
 
 .play {
